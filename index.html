@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GameSlate helps you discover PC games, explore player activity, reviews, and Linux compatibility.">
+  <meta name="theme-color" content="#10130f">
+  <title>GameSlate | Discover your next PC game</title>
+  <style>
+    :root {
+      --bg: #0d100e; --panel: #151a16; --panel2: #1b211c;
+      --text: #f1f5ef; --muted: #aab5aa; --lime: #b7f36b;
+      --line: #2b352c; --max: 1080px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background:
+        radial-gradient(ellipse at 80% 0%, rgba(183,243,107,.10), transparent 35%),
+        var(--bg); color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+    a { color: var(--lime); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 5; backdrop-filter: blur(14px);
+      background: rgba(13,16,14,.88); border-bottom: 1px solid var(--line);
+    }
+    nav { min-height: 70px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-weight: 900; letter-spacing: -.06em; font-size: 1.45rem; color: var(--text); }
+    .brand span { color: var(--lime); }
+    nav ul { display:flex; gap:22px; padding:0; margin:0; list-style:none; flex-wrap:wrap; }
+    nav a { color: var(--muted); font-size:.92rem; }
+    nav a:hover { color:var(--lime); }
+    .hero { padding: 104px 0 88px; }
+    .eyebrow { color:var(--lime); text-transform:uppercase; letter-spacing:.18em; font-size:.76rem; font-weight:800; }
+    h1 { max-width:780px; font-size:clamp(3rem, 8vw, 6.3rem); line-height:.98; letter-spacing:-.075em; margin:18px 0 24px; }
+    h1 em { color:var(--lime); font-style:normal; }
+    .lead { color:var(--muted); max-width:650px; font-size:1.18rem; }
+    .actions { display:flex; gap:14px; flex-wrap:wrap; margin-top:32px; }
+    .btn { display:inline-block; padding:12px 19px; border-radius:9px; font-weight:800; border:1px solid var(--lime); }
+    .btn.primary { background:var(--lime); color:#10150c; }
+    .btn.secondary { color:var(--text); border-color:var(--line); }
+    section { padding:66px 0; border-top:1px solid var(--line); }
+    h2 { font-size:clamp(2rem, 4vw, 3rem); letter-spacing:-.055em; line-height:1.1; margin:0 0 18px; }
+    h3 { margin:0 0 8px; font-size:1.1rem; }
+    p { color:var(--muted); margin:0 0 14px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:28px; }
+    .card { background:linear-gradient(145deg,var(--panel2),var(--panel)); border:1px solid var(--line); border-radius:14px; padding:22px; }
+    .card p { font-size:.95rem; margin:0; }
+    .tag { color:var(--lime); font-size:.8rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    .policy { max-width:850px; }
+    .policy h3 { margin-top:25px; }
+    .policy ul { color:var(--muted); padding-left:22px; }
+    .notice { border:1px solid #66552b; background:#211d12; color:#f4d995; padding:15px 18px; border-radius:10px; margin:20px 0; }
+    .notice p { color:#e8d8ad; margin:0; }
+    footer { border-top:1px solid var(--line); padding:30px 0 45px; color:var(--muted); font-size:.9rem; }
+    footer .foot { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media(max-width:760px) {
+      nav { align-items:flex-start; padding:17px 0; flex-direction:column; }
+      nav ul { gap:12px 18px; }
+      .hero { padding:75px 0 65px; }
+      .grid { grid-template-columns:1fr; }
+      section { padding:52px 0; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap" aria-label="Main navigation">
+    <a class="brand" href="#top">Game<span>Slate</span></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#support">Support</a></li>
+      <li><a href="#terms">Terms</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="eyebrow">A better way to explore PC games</div>
+    <h1>Find your next<br><em>great game.</em></h1>
+    <p class="lead">GameSlate brings useful game-discovery information together, helping you explore PC games, player activity, reviews, and Linux compatibility.</p>
+    <div class="actions">
+      <!-- Add the public Google Play URL here after the app listing is published. -->
+      <a class="btn primary" href="#features">Explore features</a>
+      <a class="btn secondary" href="#privacy">Read our privacy policy</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="eyebrow">About GameSlate</div>
+      <h2>Game discovery, in one place.</h2>
+      <p>GameSlate is an Android app for discovering PC games. It brings together game information and selected community and platform data so you can make a more informed choice about what to play next.</p>
+      <p>GameSlate does not require an account. Your favorites are stored locally on your device.</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="eyebrow">Explore</div>
+      <h2>Useful signals. Less guesswork.</h2>
+      <div class="grid">
+        <article class="card"><div class="tag">Discover</div><h3>Explore games</h3><p>Search games and browse featured categories, details, and similar titles using Steam Store data.</p></article>
+        <article class="card"><div class="tag">Community</div><h3>Player activity & reviews</h3><p>See available player-count and review-summary information from the Steam Web API, plus feeds and trends from SteamData.dev.</p></article>
+        <article class="card"><div class="tag">Linux</div><h3>Compatibility context</h3><p>Explore Linux compatibility summaries and community reports provided by ProtonDB.</p></article>
+      </div>
+      <p style="margin-top:18px">GameSlate also uses Steam's image CDN for game header artwork. External SteamDB, SteamData.dev, and ProtonDB pages open only when you choose to follow a link.</p>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="wrap policy">
+      <div class="eyebrow">Privacy policy</div>
+      <h2>Your data, clearly explained.</h2>
+      <p><strong>Last updated:</strong> November 8, 2026</p>
+      <div class="notice"><p><strong>Verification note:</strong> This policy describes the app behavior and SDK configuration currently verified by the developer. AdMob account-level Privacy &amp; Messaging configuration and some third-party data-retention details have not yet been independently verified. This page must be reviewed and updated before being treated as a final legal policy.</p></div>
+
+      <h3>1. No account required</h3>
+      <p>GameSlate does not offer account creation, sign-up, or login. It does not operate a GameSlate account system. Favorites are stored locally on your device and are not uploaded to GameSlate servers. You can remove this device-local data by clearing the app's data or uninstalling the app. This is not an account-deletion process because GameSlate accounts do not exist.</p>
+
+      <h3>2. Game discovery data and providers</h3>
+      <p>To provide game discovery features, the app communicates with third-party services. Depending on the feature you use, this can include:</p>
+      <ul>
+        <li><strong>Steam Store:</strong> search, app details, featured categories, and similar games.</li>
+        <li><strong>Steam Web API:</strong> current player counts and review summaries.</li>
+        <li><strong>SteamData.dev:</strong> app feeds, trending information, recent releases, and player history.</li>
+        <li><strong>ProtonDB:</strong> Linux compatibility summaries and community reports.</li>
+        <li><strong>Steam image CDN:</strong> game header artwork.</li>
+      </ul>
+      <p>Search terms are sent to Steam. Game IDs and feed requests are sent to the relevant data providers to retrieve requested information. SteamDB, SteamData.dev, and ProtonDB pages are opened only when you tap a link to them. These providers process information under their own privacy terms and practices.</p>
+
+      <h3>3. Advertising and consent</h3>
+      <p>GameSlate uses Google Mobile Ads SDK version 25.5.0 and Google User Messaging Platform (UMP) SDK version 4.0.0. Release builds use the app's AdMob identifiers; debug builds use Google's demo identifiers.</p>
+      <p>At launch, the app refreshes consent information through UMP and presents a consent form when required. GameSlate requests ads only when UMP's <code>canRequestAds()</code> returns true. When UMP indicates that a privacy-options entry point is required, the app displays an “Ad privacy choices” link that opens UMP's privacy form.</p>
+      <p>Google's Mobile Ads SDK disclosure says the SDK may collect and share IP address, app interactions, diagnostics, and identifiers such as Android Advertising ID and App Set ID for advertising, analytics, and fraud prevention. IP address may be used to estimate general location. The Android release manifest includes advertising ID and Ad Services permissions related to advertising ID, attribution, and topics.</p>
+      <p>GameSlate does not run first-party analytics. This does not mean that the third-party advertising SDK performs no analytics-related processing.</p>
+      <p><strong>AdMob account configuration:</strong> The developer has not yet verified which Privacy &amp; Messaging messages are configured or published in the AdMob account, which apps are selected, or their geographic targeting. Do not interpret this page as confirmation that those account settings have been completed.</p>
+
+      <h3>4. Data retention and security</h3>
+      <p>Favorites remain on your device unless you clear app data or uninstall the app. Data handled by third-party providers is subject to their respective retention and security practices. The developer has not yet verified all third-party retention periods, so no specific retention duration is promised here.</p>
+
+      <h3>5. Children</h3>
+      <p>The developer's intended age audience and any child-directed treatment have not yet been documented for this draft. Do not rely on this draft as a statement that the app is designed for children or that particular child-privacy requirements do or do not apply. This section requires developer review before publication.</p>
+
+      <h3>6. Changes and contact</h3>
+      <p>This policy may be updated as the app's features, providers, or legal requirements change. For privacy questions, contact <a href="mailto:gameslate@proton.me">gameslate@proton.me</a>.</p>
+      <p>Relevant Google documentation: <a href="https://developers.google.com/admob/android/privacy" target="_blank" rel="noopener">UMP and consent guidance</a>, <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener">Mobile Ads SDK data disclosure</a>, <a href="https://support.google.com/admob/answer/10114020" target="_blank" rel="noopener">AdMob message types</a>, and <a href="https://support.google.com/googleplay/android-developer/answer/10787469" target="_blank" rel="noopener">Google Play Data Safety guidance</a>.</p>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="wrap">
+      <div class="eyebrow">Support</div>
+      <h2>Need a hand?</h2>
+      <p>For questions, bug reports, or privacy requests, email:</p>
+      <p style="font-size:1.25rem;font-weight:800"><a href="mailto:gameslate@proton.me">gameslate@proton.me</a></p>
+      <p>When reporting a problem, include your device model, Android version, and a short description of what happened. Please do not send passwords or other sensitive information.</p>
+    </div>
+  </section>
+
+  <section id="terms">
+    <div class="wrap policy">
+      <div class="eyebrow">Terms of use</div>
+      <h2>Terms of use</h2>
+      <div class="notice"><p><strong>Draft / legal review pending.</strong> These preliminary terms are not a substitute for jurisdiction-specific legal review. Developer legal identity, governing law, and other required legal details have not been supplied.</p></div>
+      <h3>Use of the app</h3>
+      <p>GameSlate provides game-discovery information for general informational purposes. Availability and accuracy of third-party information may change, and GameSlate does not control the services that provide that information.</p>
+      <h3>Third-party services</h3>
+      <p>Features may rely on Steam, Steam Web API, SteamData.dev, ProtonDB, Google Mobile Ads, and related services. Your use of third-party services may be subject to their own terms and policies.</p>
+      <h3>Updates</h3>
+      <p>Features, integrations, and these draft terms may change as the app develops. Contact <a href="mailto:gameslate@proton.me">gameslate@proton.me</a> with questions.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong class="brand">Game<span>Slate</span></strong><br>Discover your next PC game.</div>
+    <div><a href="#privacy">Privacy</a> &nbsp;·&nbsp; <a href="#terms">Terms (draft)</a> &nbsp;·&nbsp; <a href="mailto:gameslate@proton.me">Support</a><br>© 2026 GameSlate. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
